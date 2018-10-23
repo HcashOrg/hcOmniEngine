@@ -1,4 +1,4 @@
-omniEngine
+hcOmniEngine
 ==========
 
 This will be the engine that drives the data for the Omniwallet back end database
