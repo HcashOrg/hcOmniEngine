@@ -1313,7 +1313,7 @@ def updateProperty(PropertyID, Protocol, LastTxDBSerialNum=None):
       reorg = False
 
     if PropertyID == 0:
-      rawprop = {"name":"HC", "blocktime":1231006505, "data":"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks", "issuer":"Satoshi Nakamoto", "url":"https://h.cash/", "propertyid":0 ,"divisible": True}
+      rawprop = {"name":"HC", "blocktime":"", "data":"", "issuer":"", "url":"https://h.cash/", "propertyid":0 ,"divisible": True}
       Issuer = rawprop['issuer']
       try:
         r = requests.get('https://hc-explorer.h.cash/supply', verify=False)
