@@ -52,7 +52,7 @@ else:
 
   #block with first MP transaction
  # firstMPtxBlock=252317
-  firstMPtxBlock=0
+  firstMPtxBlock=46000
 
   #get last known block processed from db
   currentBlock=dbSelect("select max(blocknumber) from blocks", None)[0][0]
@@ -193,7 +193,7 @@ else:
         #upadate temp orderbook
         #updateorderblob()
       else:
-        syncAddress('TsSmoC9HdBhDhq4ut4TqJY7SBjPqJFAPkGK', Protocol)
+        syncAddress('HsMFSvWd7FxpGUqbwYtGZMNEb2zyZ2zaqpk', Protocol)
 
       #Also make sure we update the json data in SmartProperties table used by exchange view
       updateProperty(1,"Omni")
